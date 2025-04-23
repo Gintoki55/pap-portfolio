@@ -9,7 +9,7 @@ interface Form {
     message: string
 }
 function FormJsx() {
-    const t = useTranslations('form');
+  const t = useTranslations('form');
   const formspreeUrl = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT;
   const [formData, setFormData] = useState<Form>({
     name: "",
