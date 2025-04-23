@@ -75,7 +75,7 @@ function FormJsx() {
               <input
                 type="text"
                 id="name"
-                value={formData?.name}
+                value={formData.name}
                 onChange={handleChange}
                 className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                  placeholder={t('namePlaceholder')}
@@ -90,7 +90,7 @@ function FormJsx() {
               <input
                 type="email"
                 id="email"
-                value={formData?.email}
+                value={formData.email}
                 onChange={handleChange}
                 className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
                 placeholder={t('emailPlaceholder')}
@@ -105,7 +105,7 @@ function FormJsx() {
               <input
                 type="tel"
                 id="phone"
-                value={formData?.phone}
+                value={formData.phone}
                 onChange={handleChange}
                 className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                 placeholder={t('phonePlaceholder')}
@@ -120,7 +120,7 @@ function FormJsx() {
               <textarea
                 id="message"
                 rows={6}
-                value={formData?.message}
+                value={formData.message}
                 onChange={handleChange}
                 className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-blue-500 focus:border-blue-500  resize-none"
                 placeholder={t('messagePlaceholder')}
