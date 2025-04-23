@@ -40,7 +40,7 @@ export const metadata = {
     icon: "/favicon.ico",
   },
   other: {
-    'google-site-verification': 'Vt3eYgI6LufKURKB_tVfw10vKd-hBMVj0jESzC-a7Eo',
+    // 'google-site-verification': 'Vt3eYgI6LufKURKB_tVfw10vKd-hBMVj0jESzC-a7Eo',
   }
 };
 
