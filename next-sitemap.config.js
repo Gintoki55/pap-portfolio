@@ -1,47 +1,25 @@
+/** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://ahmedbarkhed.vercel.app', // رابط موقعك
-  generateRobotsTxt: true, // إذا كنت تريد توليد ملف robots.txt
-  changefreq: 'daily', // التردد الذي تتغير فيه الصفحات
-  priority: 0.7, // الأولوية
+  siteUrl: 'https://ahmedbarkhed.vercel.app', // غيّر للرابط النهائي
+  generateRobotsTxt: true,
+  changefreq: 'daily',
+  priority: 0.7,
   alternateRefs: [
     {
-      href: 'https://ahmedbarkhed.vercel.app/en', // رابط اللغة الإنجليزية
+      href: 'https://ahmedbarkhed.vercel.app/en',
       hreflang: 'en',
     },
     {
-      href: 'https://ahmedbarkhed.vercel.app/ar', // رابط اللغة العربية
+      href: 'https://ahmedbarkhed.vercel.app/ar',
       hreflang: 'ar',
     },
     {
-      href: 'https://ahmedbarkhed.vercel.app/es', // رابط اللغة الإسبانية
+      href: 'https://ahmedbarkhed.vercel.app/es',
       hreflang: 'es',
     },
     {
-      href: 'https://ahmedbarkhed.vercel.app/it', // رابط اللغة الإيطالية
+      href: 'https://ahmedbarkhed.vercel.app/it',
       hreflang: 'it',
     },
-  ],
-  // يمكنك إضافة المزيد من الصفحات هنا
-  additionalPaths: async (config) => [
-    await config.transform({
-      loc: '/services', // صفحة الخدمات
-      changefreq: 'weekly',
-      priority: 0.6,
-    }),
-    await config.transform({
-      loc: '/experience', // صفحة الخبرات
-      changefreq: 'weekly',
-      priority: 0.6,
-    }),
-    await config.transform({
-      loc: '/projects', // صفحة المشاريع
-      changefreq: 'weekly',
-      priority: 0.6,
-    }),
-    await config.transform({
-      loc: '/contact', // صفحة الاتصال
-      changefreq: 'weekly',
-      priority: 0.6,
-    }),
   ],
 };
