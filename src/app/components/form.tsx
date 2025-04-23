@@ -23,10 +23,10 @@ function FormJsx() {
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const {name , value } = e.target;
+    const {id , value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value ,
+      [id]: value ,
     }));
   };
 
@@ -131,7 +131,7 @@ function FormJsx() {
             <button
               type="submit"
               disabled={loading}
-              className={`py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-900 w-full hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-[#184b72] ${
+              className={`py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-900 w-full hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-[#184b72] cursor-pointer ${
                 loading ? "opacity-50 cursor-not-allowed" : ""
               }`}
             >
